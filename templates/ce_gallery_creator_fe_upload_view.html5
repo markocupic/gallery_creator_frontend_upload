@@ -1,0 +1,27 @@
+<div class="gallery_creator_frontend_edit <?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+
+<?php if ($this->headline): ?>
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+<?php if ($this->referer): ?>
+<!-- indexer::stop -->
+<p class="back"><a href="<?php echo $this->referer; ?>" title="<?php echo $this->back; ?>"><?php echo $this->back; ?></a></p>
+
+<p class="navigation block" style="text-align:right;">
+<?php if ($this->prevItem) : ?>
+<a href="<?php echo $this->prevItem; ?>">go to previous item </a>
+<?php endif; ?>
+
+<?php if ($this->nextItem) : ?>
+&nbsp;&nbsp;&nbsp;
+<a href="<?php echo $this->nextItem; ?>">go to next item</a>
+<?php endif; ?>
+</p>
+
+<!-- indexer::continue -->
+<?php endif; ?>
+
+<?php echo $this->mainContent; ?>
+
+</div>

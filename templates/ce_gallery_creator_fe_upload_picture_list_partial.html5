@@ -1,0 +1,6 @@
+<tr class="<?php echo $this->rowClass; ?>">
+  <td class="col_0 col_first"><div class="image_container" ><a href="<?php echo $this->href; ?>" data-lightbox="lbox" title="<?php echo $this->caption; ?>"><?php echo $this->thumb; ?></a></div></td>
+  <td class="col_1"><?php echo $this->arrImage["name"]; ?></td>
+  <td class="col_2 col_last"><a href="<?php echo $this->urlEditImage; ?>">Edit image</a></td>
+  <td class="col_2 col_last"><a href="<?php echo $this->rotateImgHref; ?>"><img src="<?php echo $this->rotateImgSrc; ?>" alt="<?php echo $this->rotateImgAlt; ?>" title="<?php echo $this->rotateImgTitle; ?>"></a></td>
+</tr>
